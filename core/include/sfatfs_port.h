@@ -11,7 +11,7 @@ typedef void* disk_handle_t;
 
 typedef struct{
     sector_t total_sectors;
-    u16 sector_size=512;
+    u16 sector_size; //=512
     u8 read_only;
 }disk_info_t;
 // disk的信息，是否可读需要确定，扇区大小写定为512
